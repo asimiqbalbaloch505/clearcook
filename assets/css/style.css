@@ -47,7 +47,7 @@ footer { text-align: center; padding: 40px 0; color: #aaa; font-size: 0.8rem; }
 }
 
 .recipe-card:hover {
-  border-color: #00c853;
+  border-color: #67ad85;
   transform: translateY(-3px);
 }
 
@@ -68,7 +68,7 @@ footer { text-align: center; padding: 40px 0; color: #aaa; font-size: 0.8rem; }
 .read-link {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #00c853;
+  color: #3fa067;
   text-decoration: none;
   display: inline-block;
   margin-top: auto;

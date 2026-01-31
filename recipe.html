@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClearCook | Recipe</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo" onclick="location.href='index.html'" style="cursor:pointer">ClearCook</div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="coontact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <article id="recipe-content">
+    <h1 id="recipe-title">Loading Recipe...</h1>
+    <p id="recipe-meta" style="color: #888; margin-bottom: 20px;"></p>
+    
+    <h3>Ingredients</h3>
+    <ul id="ingredients-list" style="margin-bottom: 30px; padding-left: 20px;"></ul>
+    
+    <h3>Instructions</h3>
+    <p id="instructions-text"></p>
+    
+    <br><br>
+    <a href="index.html" style="color: #00c853; text-decoration: none; font-weight: bold;">&larr; Back to all recipes</a>
+  </article>
+</main>
+
+<script src="content/recipes.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+  const recipe = recipes[id];
+
+  if (recipe) {
+    document.title = `ClearCook | ${recipe.title}`;
+    document.getElementById('recipe-title').innerText = recipe.title;
+    document.getElementById('recipe-meta').innerText = `${recipe.time} | ${recipe.calories} kcal`;
+    
+    const ingredientsContainer = document.getElementById('ingredients-list');
+    ingredientsContainer.innerHTML = recipe.ingredients.map(ing => `<li>${ing}</li>`).join('');
+    
+    document.getElementById('instructions-text').innerText = recipe.instructions;
+  } else {
+    document.getElementById('recipe-content').innerHTML = "<h1>Recipe not found</h1><a href='index.html'>Go Back</a>";
+  }
+</script>
+
+</body>
+</html>

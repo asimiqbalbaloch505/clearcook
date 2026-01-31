@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClearCook | Simple Healthy Meals</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">ClearCook</div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero-section">
+  <img src="assets/images/hero.jpg" alt="Featured Healthy Meal" class="main-image">
+  <div class="hero-text">
+    <h1>Featured: Lemon Garlic Salmon</h1>
+    <p>A 15-minute meal designed for recovery and flavor.</p>
+  </div>
+</section>
+
+<main class="container">
+  <h2>All Recipes</h2>
+  <div id="recipe-list" class="recipe-list">
+    </div>
+</main>
+
+<footer>
+  <p>© 2026 ClearCook. Fast. Clean. Healthy.</p>
+</footer>
+
+<script src="content/recipes.js"></script>
+<script>
+  // Simple script to render the list
+  const listContainer = document.getElementById('recipe-list');
+  listContainer.innerHTML = recipes.map((recipe, index) => `
+    <div class="recipe-item" onclick="location.href='recipe.html?id=${index}'">
+      <span class="recipe-title">${recipe.title}</span>
+      <span class="recipe-meta">${recipe.time} | ${recipe.calories} kcal</span>
+    </div>
+  `).join('');
+</script>
+
+</body>
+</html>

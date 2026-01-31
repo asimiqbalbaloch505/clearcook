@@ -67,5 +67,99 @@ const recipes = [
       "Apple cider vinegar dressing"
     ],
     instructions: "1. Preheat your oven (or air fryer) to 200°C.\n2. Toss sweet potato cubes with olive oil, salt, and smoked paprika.\n3. Roast for 20 minutes, flipping halfway through, until edges are caramelized and centers are soft.\n4. Place baby kale in a large bowl. While the potatoes are still warm, toss them with the kale so the leaves slightly wilt.\n5. Add pumpkin seeds for crunch.\n6. Drizzle with apple cider vinegar dressing and toss thoroughly to ensure every leaf is coated."
+  },
+ 
+  // ... (Keep your previous 5 recipes here)
+  {
+    title: "Sheet Pan Pesto Chicken",
+    time: "25 mins",
+    calories: "390",
+    ingredients: [
+      "2 Chicken breasts, sliced",
+      "1 cup cherry tomatoes",
+      "1 bunch asparagus, trimmed",
+      "3 tbsp basil pesto",
+      "1 tbsp parmesan cheese"
+    ],
+    instructions: "1. Preheat oven to 200°C.\n2. Place chicken, tomatoes, and asparagus on a large sheet pan.\n3. Spread pesto evenly over the chicken and vegetables.\n4. Roast for 20 minutes until chicken is cooked through.\n5. Sprinkle with parmesan cheese and serve directly from the pan."
+  },
+  {
+    title: "Black Bean & Corn Tacos",
+    time: "15 mins",
+    calories: "310",
+    ingredients: [
+      "1 can black beans, rinsed",
+      "1 cup frozen corn, thawed",
+      "4 small corn tortillas",
+      "1 lime, juiced",
+      "Fresh cilantro and salsa"
+    ],
+    instructions: "1. In a small pan, warm the black beans and corn with a splash of water and taco seasoning.\n2. Warm the tortillas in a dry skillet for 30 seconds per side.\n3. Fill tortillas with the bean and corn mixture.\n4. Top with salsa, fresh cilantro, and a heavy squeeze of lime juice."
+  },
+  {
+    title: "Garlic Butter Shrimp",
+    time: "10 mins",
+    calories: "290",
+    ingredients: [
+      "400g Large shrimp, peeled",
+      "3 tbsp butter or olive oil",
+      "4 cloves garlic, minced",
+      "1/2 tsp red pepper flakes",
+      "Fresh parsley"
+    ],
+    instructions: "1. Melt butter in a large skillet over medium-high heat.\n2. Add garlic and red pepper flakes; sauté for 1 minute until fragrant.\n3. Add shrimp in a single layer. Cook for 2-3 minutes per side until pink and opaque.\n4. Toss with chopped parsley and serve over zoodles or a small portion of rice."
+  },
+  {
+    title: "Turkey & Spinach Burgers",
+    time: "20 mins",
+    calories: "340",
+    ingredients: [
+      "500g Ground turkey",
+      "1 cup fresh spinach, finely chopped",
+      "1/4 red onion, minced",
+      "1 tsp garlic powder",
+      "Salt and pepper"
+    ],
+    instructions: "1. In a bowl, combine ground turkey, chopped spinach, onion, and spices.\n2. Form into 4 even patties.\n3. Heat a grill or skillet over medium heat.\n4. Cook patties for 5-6 minutes per side until the internal temperature reaches 75°C.\n5. Serve protein-style (wrapped in large lettuce leaves) for a low-carb finish."
+  },
+  {
+    title: "Baked Cod with Gremolata",
+    time: "18 mins",
+    calories: "260",
+    ingredients: [
+      "2 Cod fillets",
+      "1/4 cup breadcrumbs (optional)",
+      "Lemon zest",
+      "2 tbsp parsley, minced",
+      "1 clove garlic, minced"
+    ],
+    instructions: "1. Preheat oven to 190°C.\n2. Place cod on a lined baking tray and season with salt.\n3. Mix lemon zest, parsley, garlic, and breadcrumbs in a small bowl.\n4. Press the mixture onto the top of the cod fillets.\n5. Bake for 12-15 minutes until the fish flakes easily with a fork."
+  },
+  {
+    title: "Tofu Stir-Fry with Broccoli",
+    time: "20 mins",
+    calories: "320",
+    ingredients: [
+      "1 block extra-firm tofu, pressed",
+      "2 cups broccoli florets",
+      "2 tbsp soy sauce",
+      "1 tbsp rice vinegar",
+      "1 tsp sesame oil"
+    ],
+    instructions: "1. Cut pressed tofu into cubes.\n2. Heat sesame oil in a wok or large pan over high heat.\n3. Fry tofu until golden on all sides (about 8 minutes).\n4. Add broccoli and a splash of water; cover for 2 minutes to steam.\n5. Remove lid, add soy sauce and rice vinegar, and toss until the sauce coats everything."
+  },
+  {
+    title: "Oatberry Overnight Bowl",
+    time: "5 mins",
+    calories: "350",
+    ingredients: [
+      "1/2 cup rolled oats",
+      "1/2 cup almond milk",
+      "1 tbsp chia seeds",
+      "1/2 cup blueberries",
+      "A pinch of cinnamon"
+    ],
+    instructions: "1. Combine oats, almond milk, and chia seeds in a jar or bowl.\n2. Stir in cinnamon and half of the blueberries.\n3. Cover and refrigerate for at least 4 hours (or overnight).\n4. In the morning, top with the remaining fresh berries and enjoy cold."
   }
 ];
+  

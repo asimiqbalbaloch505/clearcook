@@ -35,18 +35,28 @@
 
 <footer>
   <p>© 2026 ClearCook. Fast. Clean. Healthy.</p>
+  <p style="margin-top: 10px;">
+    <a href="privacy.html" style="color: #aaa; text-decoration: none; font-size: 0.8rem;">Privacy Policy</a> 
+    <span style="color: #eee; margin: 0 10px;">|</span>
+    <a href="terms.html" style="color: #aaa; text-decoration: none; font-size: 0.8rem;">Terms & Conditions</a>
+  </p>
 </footer>
 
 <script src="content/recipes.js"></script>
 <script>
-  // Simple script to render the list
   const listContainer = document.getElementById('recipe-list');
+
+if (typeof recipes !== 'undefined' && recipes.length > 0) {
   listContainer.innerHTML = recipes.map((recipe, index) => `
-    <div class="recipe-item" onclick="location.href='recipe.html?id=${index}'">
-      <span class="recipe-title">${recipe.title}</span>
-      <span class="recipe-meta">${recipe.time} | ${recipe.calories} kcal</span>
+    <div class="recipe-card">
+      <div class="card-content">
+        <h3 class="card-title">${recipe.title}</h3>
+        <p class="card-meta">${recipe.time} | ${recipe.calories} kcal</p>
+        <a href="recipe.html?id=${index}" class="read-link">Read Recipe →</a>
+      </div>
     </div>
   `).join('');
+}
 </script>
 
 </body>
